@@ -1,0 +1,37 @@
+{
+  "name": "pull-request-announcer",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsc --resolveJsonModule",
+    "watch": "tsc --watch --resolveJsonModule",
+    "tslint": "tslint 'src/**/*.ts",
+    "prestart": "npm run build",
+    "start": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaintng/pull-request-announcer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaintng/pull-request-announcer/issues"
+  },
+  "homepage": "https://github.com/chaintng/pull-request-announcer#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/koa": "^2.0.47",
+    "@types/koa-router": "^7.0.35",
+    "nodemon": "^1.18.6",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.6"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "date-fns": "^1.29.0",
+    "koa": "^2.6.2",
+    "koa-bodyparser-ts": "^0.3.1",
+    "koa-router": "^7.4.0"
+  }
+}

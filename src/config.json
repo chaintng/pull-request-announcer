@@ -1,0 +1,11 @@
+{
+  "slackWebhookUrl": "SLACK_WEBHOOK_URL",
+  "watchLabels": [
+    {
+      "label": "ready to review",
+      "slackText": "Please review",
+      "slackChannel": "general",
+      "intervalMs": 3000
+    }
+  ]
+}
